@@ -165,7 +165,7 @@ export default function AnimatedFooter() {
                 </div>
                 <div className="flex items-center space-x-3 text-gray-400 justify-center sm:justify-start">
                   <Phone className="h-5 w-5 text-blue-500" />
-                  <span>+7 (495) 123-45-67</span>
+                  <a href="https://t.me/gohanna" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">@gohanna</a>
                 </div>
                 <div className="flex items-center space-x-3 text-gray-400 justify-center sm:justify-start">
                   <MapPin className="h-5 w-5 text-blue-500" />

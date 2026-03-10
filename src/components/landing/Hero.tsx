@@ -76,7 +76,7 @@ export default function Hero() {
                 transition={{ duration: 0.8, delay: 0.6 }}
                 className="text-lg sm:text-xl text-gray-300 leading-relaxed max-w-3xl mx-auto lg:mx-0"
               >
-                В Pulse Digital мы фокусируемся на анализе рыночного спроса, понимании поведения клиентов и реализации
+                В Мой Маркетинг мы фокусируемся на анализе рыночного спроса, понимании поведения клиентов и реализации
                 стратегий, которые действительно работают. От SEO и SMM до контент-стратегии и email-маркетинга.
               </motion.p>
             </div>

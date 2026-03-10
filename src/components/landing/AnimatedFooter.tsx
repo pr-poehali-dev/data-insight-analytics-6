@@ -1,7 +1,7 @@
 import type React from "react"
 import { useState } from "react"
 import { motion } from "framer-motion"
-import { Instagram, Twitter, Linkedin, Youtube, Mail, Phone, MapPin, ArrowRight } from "lucide-react"
+import { Instagram, Twitter, Linkedin, Youtube, Phone, MapPin, ArrowRight } from "lucide-react"
 import AnimatedButton from "./AnimatedButton"
 
 export default function AnimatedFooter() {
@@ -159,10 +159,7 @@ export default function AnimatedFooter() {
             >
               <h4 className="text-lg font-semibold text-white mb-6">Контакты</h4>
               <div className="space-y-4">
-                <div className="flex items-center space-x-3 text-gray-400 justify-center sm:justify-start">
-                  <Mail className="h-5 w-5 text-blue-500" />
-                  <span>hello@moymarketing.ru</span>
-                </div>
+
                 <div className="flex items-center space-x-3 text-gray-400 justify-center sm:justify-start">
                   <Phone className="h-5 w-5 text-blue-500" />
                   <a href="https://t.me/gohanna" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">@gohanna</a>

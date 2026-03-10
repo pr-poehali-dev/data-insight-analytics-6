@@ -46,7 +46,7 @@ export default function Hero() {
                 className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-500/20 via-purple-500/20 to-pink-500/20 border border-white/30 rounded-full text-sm text-white font-medium backdrop-blur-sm"
               >
                 <div className="w-2 h-2 bg-green-400 rounded-full mr-3 animate-pulse"></div>
-                <span>Маркетинговое агентство полного цикла</span>
+                <span>Ваш партнёр по росту, а не подрядчик</span>
               </motion.div>
 
               <motion.h1
@@ -55,8 +55,8 @@ export default function Hero() {
                 transition={{ duration: 1, delay: 0.3 }}
                 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-tight"
               >
-                <span className="block text-white mb-2">МАРКЕТИНГОВОЕ</span>
-                <span className="block text-white mb-2">АГЕНТСТВО ДЛЯ</span>
+                <span className="block text-white mb-2">МАРКЕТИНГ, КОТОРЫЙ</span>
+                <span className="block text-white mb-2">РАБОТАЕТ НА</span>
                 <span
                   className={cn(
                     "block mb-2 bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent font-pacifico",
@@ -65,9 +65,9 @@ export default function Hero() {
                     textShadow: "0 0 40px rgba(147, 51, 234, 0.5)",
                   }}
                 >
-                  Бизнеса
+                  Вашу прибыль
                 </span>
-                <span className="block text-gray-300">ЛЮБОГО МАСШТАБА</span>
+                <span className="block text-gray-300">А НЕ НА ОТЧЁТЫ</span>
               </motion.h1>
 
               <motion.p
@@ -76,8 +76,8 @@ export default function Hero() {
                 transition={{ duration: 0.8, delay: 0.6 }}
                 className="text-lg sm:text-xl text-gray-300 leading-relaxed max-w-3xl mx-auto lg:mx-0"
               >
-                В Мой Маркетинг мы фокусируемся на анализе рыночного спроса, понимании поведения клиентов и реализации
-                стратегий, которые действительно работают. От SEO и SMM до контент-стратегии и email-маркетинга.
+                Мы не просто запускаем рекламу — мы встраиваемся в ваш бизнес и выстраиваем систему, которая
+                стабильно генерирует клиентов. Каждое решение измеримо: вы видите, сколько принёс каждый вложенный рубль.
               </motion.p>
             </div>
 

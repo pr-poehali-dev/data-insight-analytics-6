@@ -96,30 +96,7 @@ export default function Hero() {
                 </AnimatedButton>
               </a>
 
-              <div className="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-6">
-                <div className="flex items-center space-x-3">
-                  <div>
-                    <p className="text-sm font-medium text-white">Яндекс Партнёр</p>
-                    <p className="text-xs text-gray-400">Сертификат</p>
-                  </div>
-                </div>
-
-                <div className="flex items-center space-x-3">
-                  <div>
-                    <p className="text-sm font-medium text-white">Аккредитация</p>
-                    <p className="text-xs text-gray-400">Рейтинг A+</p>
-                  </div>
-                </div>
-
-                <div className="flex items-center space-x-3">
-                  <div>
-                    <p className="text-sm font-medium text-white">Проверено</p>
-                    <p className="text-xs text-gray-400">Надежный партнер</p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Stats moved below badges */}
+              {/* Stats */}
               <CountingStats stats={stats} />
             </motion.div>
           </motion.div>

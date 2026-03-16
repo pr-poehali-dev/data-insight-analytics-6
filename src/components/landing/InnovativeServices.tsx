@@ -66,7 +66,7 @@ export default function InnovativeServices() {
         </motion.div>
 
         <div className="grid grid-cols-1 gap-8">
-          {/* Top row - Paid Social and Google Ads */}
+          {/* Top row - Paid Social and Yandex Direct */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {services.slice(0, 2).map((service, index) => (
               <motion.div

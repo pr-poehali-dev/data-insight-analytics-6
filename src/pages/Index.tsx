@@ -9,6 +9,8 @@ import {
   ROICalculatorHome,
   AnimatedFooter,
   MouseMoveEffect,
+  Cases,
+  GetStarted,
 } from "@/components/landing"
 
 export default function Index() {
@@ -24,7 +26,9 @@ export default function Index() {
         <Hero />
         <HowWeWork />
         <InnovativeServices />
+        <Cases />
         <ROICalculatorHome />
+        <GetStarted />
         <AnimatedFooter />
       </div>
     </div>

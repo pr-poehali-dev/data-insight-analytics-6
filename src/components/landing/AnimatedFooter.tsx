@@ -164,7 +164,7 @@ export default function AnimatedFooter() {
               {new Date().getFullYear()} Мой Маркетинг. Все права защищены.
             </p>
             <div className="flex space-x-6 text-sm">
-              <a href="#" className="text-gray-500 hover:text-white transition-colors">
+              <a href="/privacy" className="text-gray-500 hover:text-white transition-colors">
                 Политика конфиденциальности
               </a>
               <a href="#" className="text-gray-500 hover:text-white transition-colors">

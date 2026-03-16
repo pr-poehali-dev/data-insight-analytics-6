@@ -133,7 +133,7 @@ export default function InnovativeServices() {
                       </motion.div>
                     )}
 
-                    {/* Paid Social Mockup */}
+                    {/* Content Factory Mockup */}
                     {service.mockup === "social" && (
                       <motion.div
                         initial={{ opacity: 0 }}
@@ -142,100 +142,59 @@ export default function InnovativeServices() {
                         viewport={{ once: true }}
                         className="w-full h-full p-2"
                       >
-                        <div className="bg-gray-800 rounded-lg p-3 h-full">
-                          <div className="flex justify-between items-center mb-3">
-                            <div className="text-xs text-gray-400">Платформы</div>
-                            <div className="flex space-x-2">
-                              <motion.div
-                                initial={{ scale: 0, opacity: 0 }}
-                                whileInView={{ scale: 1, opacity: 1 }}
-                                transition={{ duration: 0.3, delay: 0.2 }}
-                                viewport={{ once: true }}
-                                className="w-5 h-5 bg-gradient-to-br from-purple-500 to-pink-500 rounded-md flex items-center justify-center"
-                              >
-                                <Instagram className="w-3 h-3 text-white" />
-                              </motion.div>
-                              <motion.div
-                                initial={{ scale: 0, opacity: 0 }}
-                                whileInView={{ scale: 1, opacity: 1 }}
-                                transition={{ duration: 0.3, delay: 0.4 }}
-                                viewport={{ once: true }}
-                                className="w-5 h-5 bg-red-600 rounded-md flex items-center justify-center"
-                              >
-                                <Youtube className="w-3 h-3 text-white" />
-                              </motion.div>
-                              <motion.div
-                                initial={{ scale: 0, opacity: 0 }}
-                                whileInView={{ scale: 1, opacity: 1 }}
-                                transition={{ duration: 0.3, delay: 0.6 }}
-                                viewport={{ once: true }}
-                                className="w-5 h-5 bg-yellow-400 rounded-md flex items-center justify-center text-black text-xs"
-                              >
-                                <span role="img" aria-label="ghost">
-                                  &#128123;
-                                </span>
-                              </motion.div>
-                            </div>
-                          </div>
-                          <div className="space-y-1 mb-3">
+                        <div className="bg-gray-800 rounded-lg p-3 h-full flex flex-col justify-between">
+                          <div className="flex justify-between items-center mb-2">
+                            <div className="text-xs text-gray-400">Контент-план / неделя</div>
                             <motion.div
-                              className="text-white text-xs px-2 py-1 rounded bg-blue-600"
-                              initial={{ width: "0%" }}
-                              whileInView={{ width: "85%" }}
-                              transition={{ duration: 1, delay: 0.8 }}
-                              viewport={{ once: true }}
+                              animate={{ opacity: [0.5, 1, 0.5] }}
+                              transition={{ duration: 2, repeat: Infinity }}
+                              className="text-xs text-green-400 font-medium"
                             >
-                              Facebook
-                            </motion.div>
-                            <motion.div
-                              className="text-white text-xs px-2 py-1 rounded bg-pink-600"
-                              initial={{ width: "0%" }}
-                              whileInView={{ width: "92%" }}
-                              transition={{ duration: 1, delay: 1 }}
-                              viewport={{ once: true }}
-                            >
-                              Instagram
-                            </motion.div>
-                            <motion.div
-                              className="text-white text-xs px-2 py-1 rounded bg-black"
-                              initial={{ width: "0%" }}
-                              whileInView={{ width: "78%" }}
-                              transition={{ duration: 1, delay: 1.2 }}
-                              viewport={{ once: true }}
-                            >
-                              TikTok
-                            </motion.div>
-                            <motion.div
-                              className="text-black text-xs px-2 py-1 rounded bg-yellow-400"
-                              initial={{ width: "0%" }}
-                              whileInView={{ width: "65%" }}
-                              transition={{ duration: 1, delay: 1.4 }}
-                              viewport={{ once: true }}
-                            >
-                              Snapchat
+                              ● В работе
                             </motion.div>
                           </div>
-                          <div className="flex justify-between items-center">
+                          <div className="space-y-1.5 mb-2">
+                            {[
+                              { label: "Reels / Видео", color: "bg-pink-600", w: "90%" },
+                              { label: "Посты", color: "bg-blue-600", w: "75%" },
+                              { label: "Сторис", color: "bg-purple-600", w: "100%" },
+                              { label: "Shorts / TikTok", color: "bg-red-600", w: "65%" },
+                            ].map((item, i) => (
+                              <div key={i} className="flex items-center space-x-2">
+                                <div className="text-xs text-gray-400 w-24 shrink-0">{item.label}</div>
+                                <div className="flex-1 bg-gray-700 rounded h-3 overflow-hidden">
+                                  <motion.div
+                                    initial={{ width: "0%" }}
+                                    whileInView={{ width: item.w }}
+                                    transition={{ duration: 1, delay: 0.3 + i * 0.15 }}
+                                    viewport={{ once: true }}
+                                    className={`${item.color} h-full rounded`}
+                                  />
+                                </div>
+                              </div>
+                            ))}
+                          </div>
+                          <div className="flex justify-between items-end">
                             <div>
-                              <div className="text-xs text-gray-400 mb-1">Рост</div>
+                              <div className="text-xs text-gray-400 mb-0.5">Охват</div>
                               <motion.div
-                                animate={{ scale: [1, 1.1, 1] }}
+                                animate={{ scale: [1, 1.08, 1] }}
                                 transition={{ duration: 2, repeat: Infinity }}
-                                className="text-lg font-bold text-green-400"
+                                className="text-base font-bold text-green-400"
                               >
-                                +23%
+                                +41%
                               </motion.div>
                             </div>
                             <div className="flex items-end space-x-1 h-8">
-                              {[4, 6, 3, 8, 5, 7].map((height, i) => (
+                              {[3, 5, 4, 7, 6, 8, 5].map((h, i) => (
                                 <motion.div
                                   key={i}
                                   initial={{ height: "4px" }}
-                                  whileInView={{ height: `${height * 4}px` }}
-                                  transition={{ duration: 0.8, delay: 1.6 + i * 0.1 }}
+                                  whileInView={{ height: `${h * 4}px` }}
+                                  transition={{ duration: 0.8, delay: 1.0 + i * 0.08 }}
                                   viewport={{ once: true }}
-                                  className="bg-blue-500 w-1 rounded-t"
-                                ></motion.div>
+                                  className="bg-pink-500 w-1 rounded-t"
+                                />
                               ))}
                             </div>
                           </div>

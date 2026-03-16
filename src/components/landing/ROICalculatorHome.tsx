@@ -26,7 +26,7 @@ const businessTypes = [
   },
   {
     id: "professional",
-    name: "B2B услуги",
+    name: "HoReCa Ресторанный маркетинг",
     icon: <Target className="w-6 h-6" />,
     multiplier: 3.7,
     description: "Консалтинг и сервисы",

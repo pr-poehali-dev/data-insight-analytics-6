@@ -6,9 +6,9 @@ import { cn } from "@/lib/utils"
 
 export default function Hero() {
   const stats = [
-    { value: 500, suffix: "+", label: "Успешных кампаний" },
+    { value: 100, suffix: "+", label: "Успешных кампаний" },
     { value: 98, suffix: "%", label: "Довольных клиентов" },
-    { value: 1, suffix: " млрд+", label: "Выручка клиентов" },
+    { value: 100, suffix: " млн+", label: "Выручка клиентов" },
   ]
 
   return (
@@ -87,7 +87,7 @@ export default function Hero() {
               transition={{ duration: 0.6, delay: 0.8 }}
               className="flex flex-col gap-6 items-center justify-center lg:justify-start lg:items-start"
             >
-              <a href="#get-started">
+              <a href="https://max.ru/+79269068777" target="_blank" rel="noopener noreferrer">
                 <AnimatedButton variant="slim" className="bg-white text-black hover:bg-gray-100">
                   <span className="flex items-center">
                     Начать
@@ -98,9 +98,6 @@ export default function Hero() {
 
               <div className="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-6">
                 <div className="flex items-center space-x-3">
-                  <div className="w-10 h-10 bg-[#FC3F1D] rounded-xl flex items-center justify-center shadow-lg font-bold text-white text-lg">
-                    Я
-                  </div>
                   <div>
                     <p className="text-sm font-medium text-white">Яндекс Партнёр</p>
                     <p className="text-xs text-gray-400">Сертификат</p>
@@ -108,12 +105,6 @@ export default function Hero() {
                 </div>
 
                 <div className="flex items-center space-x-3">
-                  <div className="w-10 h-10 bg-blue-600 rounded-xl flex items-center justify-center shadow-lg">
-                    <svg className="w-6 h-6 text-white" viewBox="0 0 24 24" fill="currentColor">
-                      <path d="M12 2L3.09 8.26l1.42 1.42L12 4.16l7.49 5.52 1.42-1.42L12 2z" />
-                      <path d="M12 6L6.5 10.5v7h3v-5h5v5h3v-7L12 6z" />
-                    </svg>
-                  </div>
                   <div>
                     <p className="text-sm font-medium text-white">Аккредитация</p>
                     <p className="text-xs text-gray-400">Рейтинг A+</p>
@@ -121,11 +112,6 @@ export default function Hero() {
                 </div>
 
                 <div className="flex items-center space-x-3">
-                  <div className="w-10 h-10 bg-green-600 rounded-xl flex items-center justify-center shadow-lg">
-                    <svg className="w-6 h-6 text-white" viewBox="0 0 24 24" fill="currentColor">
-                      <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
-                  </div>
                   <div>
                     <p className="text-sm font-medium text-white">Проверено</p>
                     <p className="text-xs text-gray-400">Надежный партнер</p>

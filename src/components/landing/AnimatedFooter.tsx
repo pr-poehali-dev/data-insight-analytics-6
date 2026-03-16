@@ -165,6 +165,10 @@ export default function AnimatedFooter() {
                   <a href="https://t.me/gohanna" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">@gohanna</a>
                 </div>
                 <div className="flex items-center space-x-3 text-gray-400 justify-center sm:justify-start">
+                  <div className="w-5 h-5 rounded-full bg-[#0077FF] flex items-center justify-center font-bold text-white text-[10px] flex-shrink-0">М</div>
+                  <a href="https://max.ru/+79269068777" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">MAX: +7 926 906-87-77</a>
+                </div>
+                <div className="flex items-center space-x-3 text-gray-400 justify-center sm:justify-start">
                   <MapPin className="h-5 w-5 text-blue-500" />
                   <span>Москва, Россия</span>
                 </div>

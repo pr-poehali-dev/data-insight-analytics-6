@@ -167,7 +167,7 @@ export default function AnimatedFooter() {
               <a href="/privacy" className="text-gray-500 hover:text-white transition-colors">
                 Политика конфиденциальности
               </a>
-              <a href="#" className="text-gray-500 hover:text-white transition-colors">
+              <a href="/terms" className="text-gray-500 hover:text-white transition-colors">
                 Условия использования
               </a>
               <a href="#" className="text-gray-500 hover:text-white transition-colors">

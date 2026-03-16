@@ -1,71 +1,10 @@
-import type React from "react"
-import { useState } from "react"
 import { motion } from "framer-motion"
-import { Instagram, Twitter, Linkedin, Youtube, Phone, MapPin, ArrowRight } from "lucide-react"
+import { Instagram, Twitter, Linkedin, Youtube, Phone, MapPin } from "lucide-react"
 import AnimatedButton from "./AnimatedButton"
 
 export default function AnimatedFooter() {
-  const [email, setEmail] = useState("")
-  const [isSubscribed, setIsSubscribed] = useState(false)
-
-  const handleSubscribe = (e: React.FormEvent) => {
-    e.preventDefault()
-    setIsSubscribed(true)
-    setTimeout(() => setIsSubscribed(false), 3000)
-    setEmail("")
-  }
-
   return (
     <footer id="contact" className="relative bg-black border-t border-gray-800/50">
-      {/* Newsletter Section */}
-      <div className="relative z-10 border-b border-gray-800/50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-            className="text-center mb-12"
-          >
-            <h3 className="text-3xl sm:text-4xl font-bold text-white mb-4">Будьте в курсе трендов</h3>
-            <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-              Получайте эксклюзивные инсайты, стратегии развития бренда и советы по росту каждую неделю.
-            </p>
-          </motion.div>
-
-          <motion.form
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            viewport={{ once: true }}
-            onSubmit={handleSubscribe}
-            className="max-w-md mx-auto"
-          >
-            <div className="flex gap-4">
-              <div className="flex-1 relative">
-                <input
-                  type="email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  placeholder="Ваш email"
-                  className="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-colors"
-                  required
-                />
-              </div>
-              <AnimatedButton
-                type="submit"
-                className="bg-white text-black hover:bg-gray-100"
-              >
-                <ArrowRight className="h-5 w-5" />
-              </AnimatedButton>
-            </div>
-            {isSubscribed && (
-              <p className="text-green-400 text-center mt-4 animate-fade-in">Спасибо за подписку!</p>
-            )}
-          </motion.form>
-        </div>
-      </div>
-
       {/* Main Footer Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-12">

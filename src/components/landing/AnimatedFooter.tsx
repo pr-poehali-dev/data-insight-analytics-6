@@ -5,6 +5,33 @@ import AnimatedButton from "./AnimatedButton"
 export default function AnimatedFooter() {
   return (
     <footer id="contact" className="relative bg-black border-t border-gray-800/50">
+      {/* CTA Section */}
+      <div className="relative z-10 border-b border-gray-800/50">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+          >
+            <span className="inline-block text-green-400 text-sm font-medium tracking-widest uppercase mb-4">
+              Начнём?
+            </span>
+            <h3 className="text-4xl sm:text-5xl font-bold text-white mb-6">
+              Готовы вырасти?
+            </h3>
+            <p className="text-xl text-gray-400 max-w-2xl mx-auto mb-10">
+              Расскажите о своём бизнесе — и мы предложим стратегию, которая даст реальный результат.
+            </p>
+            <a href="#get-started">
+              <AnimatedButton className="bg-white text-black hover:bg-gray-100 px-10 py-4 text-lg font-semibold">
+                Оставить заявку
+              </AnimatedButton>
+            </a>
+          </motion.div>
+        </div>
+      </div>
+
       {/* Main Footer Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-12">

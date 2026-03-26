@@ -9,7 +9,7 @@ export default function Hero() {
     { value: 7, suffix: "+ лет", label: "На рынке" },
     { value: 100, suffix: "+", label: "Успешных кампаний" },
     { value: 98, suffix: "%", label: "Довольных клиентов" },
-    { value: 100, suffix: " млн+", label: "Выручка клиентов" },
+
   ]
 
   return (
